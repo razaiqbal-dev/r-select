@@ -36,6 +36,7 @@ const SingleSelect = (props) => {
       {collapsed &&
         props.options.map((option, index) => (
           <div
+            style={styles.options}
             data-option-value={option.value}
             onClick={() => handleSelected(option)}
             key={index}
@@ -52,5 +53,18 @@ export default SingleSelect
 const styles = {}
 
 styles.select = {
-  border: '1px solid'
+  border: '1px solid #f5f5f5',
+  width: '15rem',
+  borderRadius: '15px',
+  padding: '.5rem 1rem',
+  color: '#5c5c5c',
+  fontWeight: '400'
+}
+
+styles.options = {
+  ...styles.select,
+  border: 'none',
+  borderBottom: '1px solid #f5f5f5',
+  borderRadius: 'none',
+  fontSize: '14px'
 }

@@ -36,7 +36,7 @@ const App = () => {
     <React.Fragment>
       <div>{JSON.stringify(selected)}</div>
       <SingleSelect
-        style={style}
+        // style={style}
         title='Select Option'
         options={options}
         setSelected={(value) => handleSelected(value)}
@@ -47,6 +47,4 @@ const App = () => {
 
 export default App
 
-const style = {
-  border: '1px solid red'
-}
+const style = {}
