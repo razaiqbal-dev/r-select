@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { ExampleComponent } from 'r-select'
+import { ExampleComponent, SingleSelect } from 'r-select'
 import 'r-select/dist/index.css'
 
+const options = [1, 2, 3]
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <SingleSelect style={style} title='Select option' options={options} />
 }
 
 export default App
+
+const style = {
+  border: '1px solid red'
+}
